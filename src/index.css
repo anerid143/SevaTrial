@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #002541;
+  --color-primary-container: #123b5d;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #82a5cd;
+  --color-primary-fixed: #d0e4ff;
+  --color-primary-fixed-dim: #a6caf3;
+  --color-on-primary-fixed: #001d34;
+  --color-on-primary-fixed-variant: #24496c;
+
+  --color-secondary: #00696b;
+  --color-secondary-container: #8ff3f4;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #007072;
+  --color-secondary-fixed: #8ff3f4;
+  --color-secondary-fixed-dim: #72d6d8;
+  --color-on-secondary-fixed: #002020;
+  --color-on-secondary-fixed-variant: #004f51;
+
+  --color-tertiary: #1a2528;
+  --color-tertiary-container: #303b3e;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #99a5a8;
+  --color-tertiary-fixed: #d9e5e8;
+  --color-tertiary-fixed-dim: #bdc9cc;
+  --color-on-tertiary-fixed: #121d20;
+  --color-on-tertiary-fixed-variant: #3d494c;
+
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+
+  --color-background: #f8f9fb;
+  --color-on-background: #191c1e;
+
+  --color-surface: #f8f9fb;
+  --color-surface-bright: #f8f9fb;
+  --color-surface-dim: #d8dadc;
+  --color-surface-variant: #e0e3e5;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #42474e;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-container-high: #e6e8ea;
+  --color-surface-container-highest: #e0e3e5;
+  --color-surface-tint: #3d6185;
+
+  --color-outline: #73777f;
+  --color-outline-variant: #c2c7cf;
+  --color-inverse-surface: #2d3133;
+  --color-inverse-on-surface: #eff1f3;
+  --color-inverse-primary: #a6caf3;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 0.75rem;
+  --spacing-space-lg: 1.25rem;
+  --spacing-space-xl: 1.75rem;
+  --spacing-margin: 1rem;
+  --spacing-margin-md: 1.5rem;
+  --spacing-margin-lg: 2rem;
+  --spacing-gutter: 1rem;
+  --spacing-gutter-lg: 1.5rem;
+
+  --font-body: 'Inter', sans-serif;
+  --font-headline: 'Plus Jakarta Sans', sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+  }
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+.font-headline-xl {
+  font-family: var(--font-headline);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.font-headline-lg {
+  font-family: var(--font-headline);
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: var(--font-headline);
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.font-label-lg {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+.font-label-md {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+.font-label-sm {
+  font-family: var(--font-body);
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+.text-tabular-data {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  font-feature-settings: "tnum" 1, "cv05" 1;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+.material-symbols-outlined.fill-1 {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(18, 59, 93, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(18, 59, 93, 0.3);
+}

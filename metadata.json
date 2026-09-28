@@ -1,0 +1,8 @@
+{
+  "name": "SevaTrial",
+  "description": "SevaTrial Clinical Intelligence Platform - Command Center for clinical trials, pharmacovigilance safety, regulatory compliance, and institutional research analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
